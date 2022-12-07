@@ -241,6 +241,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [ 16, 17 ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("HitboxPivot/EatHitbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=8]
 resource_name = "IdleLeft"
@@ -258,6 +270,18 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 14, 15 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("HitboxPivot/EatHitbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=9]
@@ -277,6 +301,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [ 12, 13 ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("HitboxPivot/EatHitbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=10]
 resource_name = "IdleUp"
@@ -294,6 +330,18 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 18, 19 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("HitboxPivot/EatHitbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -319,7 +367,7 @@ tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
-"update": 0,
+"update": 1,
 "values": [ true ]
 }
 
@@ -339,6 +387,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [ 7, 8, 6 ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("HitboxPivot/EatHitbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=4]
 resource_name = "RunLeft"
@@ -355,6 +415,18 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ 4, 5, 3 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("HitboxPivot/EatHitbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -373,6 +445,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [ 1, 2, 0 ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("HitboxPivot/EatHitbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=6]
 resource_name = "RunUp"
@@ -389,6 +473,18 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ 10, 11, 9 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("HitboxPivot/EatHitbox/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }
 
 [sub_resource type="AnimationNodeAnimation" id=33]
@@ -522,6 +618,7 @@ anims/RunUp = SubResource( 6 )
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource( 21 )
 anim_player = NodePath("../AnimationPlayer")
+active = true
 parameters/playback = SubResource( 22 )
 parameters/Eat/blend_position = Vector2( -0.386772, 0.0613734 )
 parameters/Idle/blend_position = Vector2( -0.00306612, -0.0283263 )
@@ -529,6 +626,7 @@ parameters/Run/blend_position = Vector2( 0, 0 )
 
 [node name="HitboxPivot" type="Position2D" parent="."]
 position = Vector2( 0, -1 )
+rotation = 4.71239
 __meta__ = {
 "_gizmo_extents_": 8.0
 }
