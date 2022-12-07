@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Bush.tscn" type="PackedScene" id=2]
 [ext_resource path="res://World/grass-sheet.png" type="Texture" id=3]
 [ext_resource path="res://World/Carrots.tscn" type="PackedScene" id=4]
+[ext_resource path="res://World/carrots-eaten.png" type="Texture" id=5]
 
 [node name="World" type="Node2D"]
 
@@ -12,6 +13,30 @@ position = Vector2( 160, 90 )
 texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 320, 180 )
+
+[node name="Carrots-eaten" type="Sprite" parent="."]
+position = Vector2( 88, 72 )
+texture = ExtResource( 5 )
+
+[node name="Carrots-eaten2" type="Sprite" parent="."]
+position = Vector2( 168, 96 )
+texture = ExtResource( 5 )
+
+[node name="Carrots-eaten3" type="Sprite" parent="."]
+position = Vector2( 184, 80 )
+texture = ExtResource( 5 )
+
+[node name="Carrots-eaten4" type="Sprite" parent="."]
+position = Vector2( 96, 136 )
+texture = ExtResource( 5 )
+
+[node name="Carrots-eaten5" type="Sprite" parent="."]
+position = Vector2( 264, 40 )
+texture = ExtResource( 5 )
+
+[node name="Carrots-eaten6" type="Sprite" parent="."]
+position = Vector2( 248, 40 )
+texture = ExtResource( 5 )
 
 [node name="YSort" type="YSort" parent="."]
 
