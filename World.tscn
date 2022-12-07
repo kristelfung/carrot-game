@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://World/Bush.tscn" type="PackedScene" id=2]
+[ext_resource path="res://World/grass-sheet.png" type="Texture" id=3]
+[ext_resource path="res://World/Carrots.tscn" type="PackedScene" id=4]
+
+[node name="World" type="Node2D"]
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 160, 90 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 320, 180 )
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="Player" parent="YSort" instance=ExtResource( 1 )]
+position = Vector2( 56, 16 )
+
+[node name="Bush" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 200, 80 )
+
+[node name="Bush2" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 72, 72 )
+
+[node name="Bush3" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 184, 96 )
+
+[node name="Carrots" type="YSort" parent="YSort"]
+position = Vector2( 56, 16 )
+
+[node name="Carrots4" parent="YSort/Carrots" instance=ExtResource( 4 )]
+position = Vector2( 192, 24 )
+
+[node name="Carrots5" parent="YSort/Carrots" instance=ExtResource( 4 )]
+position = Vector2( 32, 56 )
+
+[node name="Carrots6" parent="YSort/Carrots" instance=ExtResource( 4 )]
+position = Vector2( 40, 120 )
+
+[node name="Carrots" parent="YSort/Carrots" instance=ExtResource( 4 )]
+position = Vector2( 112, 80 )
+
+[node name="Carrots2" parent="YSort/Carrots" instance=ExtResource( 4 )]
+position = Vector2( 208, 24 )
+
+[node name="Carrots3" parent="YSort/Carrots" instance=ExtResource( 4 )]
+position = Vector2( 128, 64 )
