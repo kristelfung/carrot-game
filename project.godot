@@ -11,8 +11,12 @@ config_version=4
 [application]
 
 config/name="Carrot Game"
-run/main_scene="res://World.tscn"
+run/main_scene="res://Menu.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+GlobalWorld="*res://World.tscn"
 
 [display]
 

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/minecraft-track.mp3-cd801149e192ce91cc2ab68184988813.mp3str"
+
+[deps]
+
+source_file="res://minecraft-track.mp3"
+dest_files=[ "res://.import/minecraft-track.mp3-cd801149e192ce91cc2ab68184988813.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
